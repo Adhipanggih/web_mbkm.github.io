@@ -66,7 +66,7 @@ const Carousell = () => {
   };
 
   return (
-    <div className="container px-4 px-lg-5 h-100">
+    <div className="container px-4 px-lg-5 h-100 my-5">
       <Carousel
         style={{
           border: "3px solid #ddd",
