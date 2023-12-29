@@ -1,0 +1,16 @@
+#card {
+  padding: 2px;
+}
+
+#card #img {
+  width: 40px;
+}
+
+#card #title {
+  width: 100px;
+}
+
+#flex-con {
+  display: flex;
+  justify-content: space-between;
+}
