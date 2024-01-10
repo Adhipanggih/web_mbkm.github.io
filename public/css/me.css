@@ -1,5 +1,8 @@
 #card {
   padding: 2px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 
 #card #img {
@@ -13,4 +16,5 @@
 #flex-con {
   display: flex;
   justify-content: space-between;
+  width: 60%;
 }

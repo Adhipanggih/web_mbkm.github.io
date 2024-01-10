@@ -47,7 +47,7 @@ const CardBerita = () => {
         marginTop: "25px",
         display: "grid",
         alignItems: "center",
-        gridTemplateColumns: "repeat(3, 1fr)",
+        gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
         gap: "20px",
       }}
     >

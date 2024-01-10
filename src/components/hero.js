@@ -1,17 +1,21 @@
 import React from "react";
 import icon from "../assets/img/favicon.png";
-import axios from "axios";
+import maps from "../assets/img/map.png";
+import informasipublik from "../assets/img/document.png";
+import albumgaleri from "../assets/img/image-gallery.png";
+import pengaduan from "../assets/img/announcement.png";
+import { faMaximize } from "@fortawesome/free-solid-svg-icons";
 
 const Card = ({ title, img }) => {
   return (
-    <div class="card text-center" id="card">
+    <a class="card text-center sm:text-center" id="card">
       <div class="card-body">
         <img class="card-title" id="img" src={img} />
         <p class="card-text" id="title">
           {title}
         </p>
       </div>
-    </div>
+    </a>
   );
 };
 
@@ -19,31 +23,19 @@ const Hero = () => {
   const card = [
     {
       title: "Peta Desa",
-      icon: icon,
-    },
-    {
-      title: "Produk Hukum",
-      icon: icon,
+      icon: maps,
     },
     {
       title: "Informasi Publik",
-      icon: icon,
-    },
-    {
-      title: "Lapak",
-      icon: icon,
-    },
-    {
-      title: "Arsip Berita",
-      icon: icon,
+      icon: informasipublik,
     },
     {
       title: "Album Galeri",
-      icon: icon,
+      icon: albumgaleri,
     },
     {
       title: "Pengaduan",
-      icon: icon,
+      icon: pengaduan,
     },
   ];
   return (
@@ -66,11 +58,11 @@ const Hero = () => {
                 aria-describedby="search-addon"
               />
             </div>
-            <a className="btn btn-primary btn-xl mt-2" href="#about">
+            <a className="btn btn-primary btn-xl mt-4" href="#about">
               Find Out More
             </a>
           </div>
-          <div id="flex-con" className="mt-4">
+          <div id="flex-con" className="mt-2">
             {card.map((i) => {
               return <Card title={i.title} img={i.icon} />;
             })}

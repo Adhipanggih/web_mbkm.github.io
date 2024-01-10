@@ -1,4 +1,5 @@
 import React from "react";
+import Profildesa from "./profildesa";
 
 const Nav = () => {
   return (
@@ -24,7 +25,7 @@ const Nav = () => {
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ms-auto my-2 my-lg-0">
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="./profildesa">
                 Profil Desa
               </a>
             </li>
@@ -34,7 +35,10 @@ const Nav = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a
+                className="nav-link"
+                href="https://www.google.co.id/maps/place/Karangasem,+Laweyan,+Surakarta+City,+Central+Java,+Indonesia/@-7.5520006,110.7704394,15.69z/data=!4m6!3m5!1s0x2e7a14423bb7a909:0xe0eb2f56f8a8e773!8m2!3d-7.5512152!4d110.776317!16s%2Fg%2F122qmg_j?entry=ttu"
+              >
                 Peta
               </a>
             </li>

@@ -24,7 +24,15 @@ const Carousell = () => {
       .catch((error) => {
         console.error("Error fetching prayer times:", error);
       });
+
+    getdata();
   }, []);
+  const getdata = async () => {
+    const apiUrl = "http://192.168.49.190:5000/api/post";
+
+    const data = await axios.get(apiUrl);
+    console.log(data);
+  };
   const cardData = [
     {
       id: 1,
@@ -133,16 +141,18 @@ const Carousell = () => {
       >
         <div
           style={{
-            padding: "8px",
+            padding: "8px ",
           }}
         >
           <FontAwesomeIcon
             icon={faBell}
             style={{ marginRight: "10px", color: "black" }}
           />
+          <h6>Info</h6>
         </div>
-
-        <span style={{ color: "black" }}>Pengumuman</span>
+        <marquee>
+          <span style={{ color: "black" }}>Pengumuman</span>
+        </marquee>
       </div>
       <div className="p">
         <h4
@@ -264,6 +274,7 @@ const Carousell = () => {
           {cardData.map((card) => (
             <Card
               key={card.id}
+              className="mb-3"
               style={{
                 width: "18rem",
                 marginRight: "10px",
